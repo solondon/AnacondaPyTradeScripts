@@ -1,0 +1,13 @@
+pip install pandas
+pip install pandas_datareader
+import pandas as pd
+pd.core.common.is_list_like = pd.api.types.is_list_like
+from pandas_datareader import data
+df = data.get_data_yahoo ('MSFT', '2018-01-01', '2019-01-01')
+df.head()
+df = data.get_data_yahoo ('AAPL', '2019-01-01', '2019-08-26')
+df.head()
+df = data.get_data_yahoo ('PHYS', '2018-01-01', '2019-08-30')
+df.head()
+df = data.get_data_yahoo ('PSLV', '2018-01-01', '2019-08-30')
+df.head()

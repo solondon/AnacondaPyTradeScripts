@@ -1,0 +1,10 @@
+
+** Navigate to drive and directory from Anaconda prompt
+cd /d E:\DEV\AnacondaPyTradeScripts
+
+**Environment = Trading
+activate Trading
+
+** run notebook
+jupyter notebook
+
